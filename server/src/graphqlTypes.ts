@@ -9,13 +9,13 @@ export interface GraphQLContext {
 
 const graphqlTypes = gql`
   type Mutation {
-    register(name: String, email: String, password: String): AuthenticationOutput
-    login(email: String, password: String): AuthenticationOutput
+    register(name: String!, email: String!, password: String!): AuthenticationOutput
+    login(email: String!, password: String!): AuthenticationOutput
   }
   
   type Query {
     me: User
-    user(_id: String): User
+    user(_id: String!): User
     users(search: String, first: Int, after: Int): UserConnectionOutput
   }
 `;
