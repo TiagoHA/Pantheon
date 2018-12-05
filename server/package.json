@@ -48,12 +48,5 @@
     "docker:up": ".docker/docker-compose up --build",
     "start": "ts-node",
     "watch": "nodemon --watch 'src/**/*.ts' --ignore 'src/**/*.spec.ts' --exec 'ts-node' src/server.ts"
-  },
-  "tsconfig": {
-    "compilerOptions": {
-      "lib": [
-        "es2015"
-      ]
-    }
   }
 }
