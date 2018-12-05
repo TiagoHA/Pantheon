@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components/native';
+import React from 'react'
+import styled from 'styled-components/native'
 
 const Wrapper = styled.View`
   flex-direction: column;
@@ -7,7 +7,7 @@ const Wrapper = styled.View`
   padding-horizontal: 20;
   padding-top: 10;
   padding-bottom: 10;
-`;
+`
 
 const BackButton = styled.TouchableOpacity`
   width: 27;
@@ -15,14 +15,14 @@ const BackButton = styled.TouchableOpacity`
   align-items: center;
   justify-content: center;
   margin-bottom: 15;
-`;
+`
 
 const Title = styled.Text`
   font-size: 40;
   font-weight: 700;
   color: ${({ theme }) => theme.colors.primary};
   margin-left: 20;
-`;
+`
 
 const Description = styled.Text`
   font-size: 20;
@@ -33,7 +33,7 @@ const Description = styled.Text`
 `
 
 const Arrow = styled.Image.attrs({
-  source: ({theme}) => theme.images.arrowIcon
+  source: ({ theme }) => theme.images.arrowIcon,
 })`
   width: 40;
   height: 40;
@@ -45,7 +45,7 @@ interface HeaderProps {
   title: string
   backAction: () => void
   description: string
-};
+}
 
 const HeaderLogin = ({ title, backAction, description }: HeaderProps) => (
   <Wrapper>
@@ -55,6 +55,6 @@ const HeaderLogin = ({ title, backAction, description }: HeaderProps) => (
     <Title>{title}</Title>
     <Description>{description}</Description>
   </Wrapper>
-);
+)
 
-export default HeaderLogin;
+export default HeaderLogin

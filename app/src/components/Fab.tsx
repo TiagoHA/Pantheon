@@ -13,13 +13,11 @@ const ButtonWrapper = styled.TouchableOpacity`
 `
 
 interface Props extends TouchableOpacityProps {
-  icon: React.ReactNode,
-  isLoading?: boolean,
+  icon: React.ReactNode
+  isLoading?: boolean
 }
 
 const Button = (props: Props) => {
-  console.log('props', props);
-  
   return (
     <ButtonWrapper
       {...props}
@@ -36,4 +34,4 @@ const Button = (props: Props) => {
   )
 }
 
-export default Button;
+export default Button

@@ -1,23 +1,22 @@
 import * as React from 'react'
-import styled from 'styled-components/native';
-import { NavigationInjectedProps } from 'react-navigation';
+import styled from 'styled-components/native'
+import { NavigationInjectedProps } from 'react-navigation'
 import Button from '../../components/Button'
-import { Routes } from '../../config/Router';
+import { Routes } from '../../config/Router'
 
 const Wrapper = styled.ImageBackground.attrs({
-  source: ({ theme }) => theme.images.background
+  source: ({ theme }) => theme.images.background,
 })`
   flex: 1;
   align-items: center;
-`;
-
+`
 
 const Pantheon = styled.Image.attrs({
-  source: ({ theme }) => theme.images.logo
+  source: ({ theme }) => theme.images.logo,
 })`
   width: 400;
   height: 400;
-`;
+`
 
 const AppName = styled.Text`
   font-size: 35;
@@ -48,6 +47,6 @@ const Launch = ({ navigation }: Props) => (
       <Button title="SIGN UP" onPress={() => navigation.navigate(Routes.SignUp)} />
     </AlignAtBottom>
   </Wrapper>
-);
+)
 
 export default Launch
